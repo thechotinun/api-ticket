@@ -56,7 +56,7 @@ $ npm run start:dev
 $ npm run build
 $ npm run start:prod
 ```
-# docker-compose.yml
+## docker-compose.yml
 ```yml
 services:
   db:
@@ -112,7 +112,7 @@ services:
 volumes:
   pgdata: {}
 ```
-# default.conf
+## default.conf
 ```conf
 upstream api {
     server api:3100; # server name is same as the service name used in docker-compose file
@@ -131,11 +131,11 @@ server {
     }
 }
 ```
-# init.sql
+## init.sql
 ```sql
 CREATE DATABASE ticket;
 ```
-### Start Application with docker compose
+## Start Application with docker compose
 ```bash
 $ docker-compose up -d --build 
 ```
