@@ -56,6 +56,11 @@ $ npm run start:dev
 $ npm run build
 $ npm run start:prod
 ```
+### unit test
+
+```bash
+$ npm run test
+```
 ## docker-compose.yml
 ```yml
 services:
