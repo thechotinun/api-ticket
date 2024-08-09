@@ -1,0 +1,25 @@
+module.exports = {
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  rootDir: 'src',
+  testRegex: '.*\\.spec\\.ts$',
+  transform: {
+    '^.+\\.(t|j)s$': 'ts-jest',
+  },
+  collectCoverageFrom: ['**/*.(t|j)s'],
+  coverageDirectory: '../coverage',
+  testEnvironment: 'node',
+  moduleNameMapper: {
+    '^@common/(.*)$': '<rootDir>/common/$1',
+    '^@config/(.*)$': '<rootDir>/config/$1',
+    '^@helpers/(.*)$': '<rootDir>/helpers/$1',
+    '^@entities/(.*)$': '<rootDir>/entities/$1',
+    '^@modules/(.*)$': '<rootDir>/modules/$1',
+    '^@interfaces/(.*)$': '<rootDir>/interfaces/$1',
+    '^@interceptors/(.*)$': '<rootDir>/interceptors/$1',
+    '^@repositories/(.*)$': '<rootDir>/repositories/$1',
+    '^@utils/(.*)$': '<rootDir>/utils/$1',
+    '^@test/(.*)$': '<rootDir>/test/$1',
+    '^@exceptions/(.*)$': '<rootDir>/exceptions/$1',
+    '^@middleware/(.*)$': '<rootDir>/common/middlewares/$1',
+  },
+};
